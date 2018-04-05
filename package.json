@@ -1,7 +1,7 @@
 {
-  "name": "jekyll-webpack-react",
+  "name": "jekyll-webpack-react-portfolio",
   "version": "1.0.0",
-  "description": "A simple boilerplate for webpack and jekyll integration.",
+  "description": "My Portfolio",
   "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,8 +16,8 @@
     "webpack",
     "react"
   ],
-  "author": "Allison Zadrozny",
-  "license": "ISC",
+  "author": "Juan pareles",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/allizad/jekyll-webpack/issues"
   },
