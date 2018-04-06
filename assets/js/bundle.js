@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c2f8fede889334c61bad"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "24704a01b2d128a76737"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -38347,7 +38347,7 @@ exports.default = _default;
 /* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/profile-square.jpg";
+module.exports = __webpack_require__.p + "assets/images/profile-square.jpg";
 
 /***/ }),
 /* 243 */
@@ -38522,7 +38522,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // removed by extract-text-webpack-plugin
     if(true) {
-      // 1522968052787
+      // 1522979746237
       var cssReload = __webpack_require__(250)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
