@@ -24,6 +24,7 @@
     "semi": "warn",
     "arrow-body-style": "off",
     "indent": [2, "tab"],
-    "no-tabs": 0
+    "no-tabs": 0,
+    "max-len": [2, 400, 20]
   }
 }

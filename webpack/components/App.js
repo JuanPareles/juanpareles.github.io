@@ -1,21 +1,27 @@
 import React from 'react';
 import Profile from './Profile';
-import SocialMedia from './SocialMedia';
+// import SocialMedia from './social-media/SocialMedia';
+import About from './sections/About';
+import DevStack from './sections/DevStack';
+import DesignStack from './sections/DesignStack';
+import NewLearnings from './sections/NewLearnings';
+import Posts from './sections/Posts';
 
 const App = () => {
 	return (
-		<section className="grid-container">
-			<div className="grid-item left-col">
+		<div>
+			<section className="background-top">
 				<Profile />
-				<SocialMedia />
-			</div>
-			<div className="grid-item right-col">
-				<div className="section-box">About</div>
-				<div className="section-box">Tools</div>
-				<div className="section-box">Posts</div>
-				<div className="section-box">Contact</div>
-			</div>
-		</section>
+				{/* <SocialMedia /> */}
+			</section>
+			<section className="wrapper">
+				<About />
+				<DevStack />
+				<DesignStack />
+				<NewLearnings />
+				<Posts />
+			</section>
+		</div>
 	);
 };
 

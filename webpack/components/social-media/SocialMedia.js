@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import codepen from '../assets/images/logo-codepen.svg';
-import github from '../assets/images/logo-github.svg';
-import instagram from '../assets/images/logo-instagram.svg';
-import linkedin from '../assets/images/logo-linkedin.svg';
-import spotify from '../assets/images/logo-spotify.svg';
+import codepen from '../../assets/images/logo-codepen.svg';
+import github from '../../assets/images/logo-github.svg';
+import instagram from '../../assets/images/logo-instagram.svg';
+import linkedin from '../../assets/images/logo-linkedin.svg';
+import spotify from '../../assets/images/logo-spotify.svg';
 
 class Profile extends Component {
 	constructor(props) {
