@@ -62,7 +62,7 @@ body {
   color: $pink;
   font-size: 140px;
   position: absolute;
-  top: 20%;
+  top: 220px;
   left: 50%;
   transform: translate(-28%, -50%);
   letter-spacing: 330px;
@@ -109,6 +109,8 @@ body {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@import url(https://fonts.googleapis.com/css?family=Oswald:100,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400);
 
 @keyframes load{0%{stroke-dashoffset:0}}
 .progress {

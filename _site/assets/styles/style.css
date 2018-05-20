@@ -1,62 +1,116 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);@import url(https://fonts.googleapis.com/css?family=Oswald:100,400);@import url(https://fonts.googleapis.com/css?family=Roboto:100,400);body {
   margin: 0;
-  color: #d0d0d0;
+  color: #FDFDFD;
   background: #fff;
   font-family: 'Roboto', sans-serif;
-  background: #1E1E1E; }
+  background: #FDFDFD; }
 
-.grid-container {
-  max-width: 1366px;
-  margin: 0 auto;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 15px; }
+.background-top {
+  background: linear-gradient(to bottom, #525c8d, #3F476D); }
 
-.grid-item {
-  display: grid;
-  grid-gap: 15px;
-  padding: 15px 0px; }
+.wrapper {
+  margin-right: auto;
+  /* 1 */
+  margin-left: auto;
+  /* 1 */
+  max-width: 960px;
+  /* 2 */
+  padding-right: 10px;
+  /* 3 */
+  padding-left: 10px;
+  /* 3 */
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2); }
 
-.left-col {
-  grid-template-rows: repeat(4, 1fr); }
+.profile-image {
+  border-radius: 50%;
+  height: 300px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2); }
 
-.right-col {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr); }
+.parentheses {
+  color: #F76F8E;
+  font-size: 140px;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translate(-28%, -50%);
+  letter-spacing: 330px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100; }
 
-.profile-card {
-  grid-row: 1 / 4;
-  background-color: #3F476D;
+.profile-box {
   text-align: center;
-  display: grid;
-  justify-content: center;
-  align-content: center; }
-  .profile-card .profile-image {
-    border-radius: 50%;
-    height: 300px; }
-  .profile-card .heading {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 2em;
-    color: #fff;
-    margin-bottom: 0px; }
-  .profile-card .sub-heading {
-    text-align: center;
-    font-style: italic; }
+  position: relative;
+  padding-top: 80px; }
 
-.social-media-container {
-  background-color: #333333;
-  display: grid;
-  grid-template-columns: repeat(5, 50px);
-  justify-content: space-evenly;
-  align-content: center; }
-  .social-media-container img {
-    fill: #fff; }
+.heading {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  margin: 0px 0px; }
+
+.sub-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+  padding-bottom: 20px; }
 
 .section-box {
-  grid-row: span 2;
-  background-color: #333333;
-  display: grid;
-  justify-content: center;
-  align-content: center; }
+  color: #333333;
+  padding: 20px; }
+  .section-box .title {
+    font-family: 'Oswald', sans-serif; }
+  .section-box p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify; }
+
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0; } }
+
+.progress {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center; }
+  .progress > li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #93A2AC;
+    font-weight: 100;
+    margin: 2rem; }
+    .progress > li:before {
+      font-family: 'Roboto';
+      content: attr(data-name);
+      position: absolute;
+      width: 100%;
+      bottom: -2rem;
+      font-weight: 400; }
+    .progress > li::after {
+      font-family: Lato;
+      content: attr(data-percent);
+      position: absolute;
+      width: 100%;
+      top: 3.7rem;
+      left: 0;
+      font-size: 2rem;
+      text-align: center; }
+  .progress svg {
+    width: 10rem;
+    height: 10rem; }
+    .progress svg:nth-child(2) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: rotate(-90deg); }
+    .progress svg:nth-child(2) path {
+      fill: none;
+      stroke-width: 25;
+      stroke-dasharray: 629;
+      stroke: #FDFDFD;
+      opacity: .9;
+      animation: load 10s; }

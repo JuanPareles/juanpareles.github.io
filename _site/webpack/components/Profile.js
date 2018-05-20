@@ -13,15 +13,16 @@ class Profile extends Component {
 
 	render() {
 		return (
-			<div className="profile-card">
+			<div className="wrapper profile-box">
 				<img
 					className="profile-image"
 					style={{ margin: '0.5em' }}
 					src={this.state.src}
 					alt="React Logo"
 				/>
+				<h1 className="parentheses">()</h1>
 				<h1 className="heading">Juan Pareles</h1>
-				<h3 className="sub-heading"><i>Full-Stack Developer</i></h3>
+				<h3 className="sub-heading">Full-Stack Developer</h3>
 			</div>
 		);
 	}
